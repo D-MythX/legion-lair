@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta mame="author" content="MYTH">
+	<title>Login-Page 01</title>
+	<style type="text/css">
+		* {
+		  box-sizing: border-box;
+		}
+		body{
+		  padding: 0px;
+		  font-size: 10px;
+	   	font-family: serif;
+		  background-color: silver;
+		}
+		.a{
+		  background-color: white;
+		  color: gray;
+		  margin-top: 0;
+		  border-radius: 10px;
+    }
+    input{
+      width: 90%;
+      padding: 5px;
+      border-color: gray;
+      border-style: solid;
+      border-width: 1px;
+      font-size: 13px;
+      font-weight: 350;
+      margin-left: auto;
+      margin-right: auto;
+      outline: none;
+    }
+    #login{
+      background-color: gray;
+      border: 1px solid gray;
+      color: white;
+      padding: 15px;
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      width: 95%;
+      border-radius: 7px;
+      outline: none;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+    }
+    #passbut{
+      width: 100%;
+      height: 60px;
+      font-size: 15px;
+      border: 1px solid lightgray;
+      color: gray;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      outline: none;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+    }
+    #login:hover{
+      background-color: white;
+      color: gray;
+    }
+    #passbut:hover{
+      background-color: gray;
+      color: white;
+    }
+    .title{
+      text-align: center;
+      padding-top: 30px;
+      border-bottom: 1px solid;
+      line-height: 0.1em;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+   .mid {
+     background-color: white;
+     padding-left: 3px;
+     padding-right: 3px;
+     font-variant: small-caps;
+   }
+   
+   form{
+     padding-left: 10px;
+     padding-right: 10px
+   }
+   #footer{
+     background-color: white;
+     margin-top: 20px;
+     padding: 2px;
+     border-radius: 10px;
+     font-family: san-serif;
+     color: gray;
+   }
+   .social {
+     text-align: center;
+     list-style-type: none;
+     padding: 0;
+   }
+   a {
+     text-decoration: none;
+     color: gray;
+   }
+   .col::after {
+     content: "";
+     display: block;
+     clear: both;
+     color: gray;
+   }
+   .col > div {
+     float: left;
+     padding: 10px;
+     color: gray;
+   }
+   .left-col {
+     width: 50%;
+   }
+   .right-col {
+     width: 50%;
+   }
+   .foothead {
+     font-weight: bold;
+     margin-bottom: 1px;
+   }
+   .p {
+     font-family: serif;
+   }
+   .new-acct {
+     background-color: gray;
+     border: 1px solid gray;
+     color: white;
+     padding: 15px;
+     font-size: 15px;
+     margin-top: 15px;
+     margin-bottom: 0px;
+     width: 100%;
+     border-radius: 7px;
+     outline: none;
+     -webkit-transition-duration: 1s;
+     transition-duration: 1s;
+   }
+   .new-acct:hover{
+     background-color: white;
+     color: gray;
+   }
+   .stop {
+     margin-top: 0;
+     font-weight: 300;
+     font-size: 11px;
+   }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="a">
+			<h1 class="title">
+				<span class="mid">Member Login</span>
+		  </h1>
+			<form>
+				<center>
+						<input style="margin-top: 10px;" type="text" placeholder="Username" autocapitalize="words" autocomplete="on" required>
+				</center>
+				<center>
+					<input style="margin-top: 15px" type="password" placeholder="Password" minlength="8" required>
+				</center>
+				<center>
+					<button id="login">Login</button>
+				</center>
+			</form>
+			<button id="passbut">Forgot Password?</button>
+   	</div>
+   </header>
+   <section>
+   	<center>
+   		<button class="new-acct">Create New Account</button>
+   	</center>
+   </section>
+   <footer id="footer">
+   	<div class="col">
+   		<div class="left-col">
+   			<ul class="social">
+   				<li class="foothead"><h3>SOCIAL</h3></li>
+   				<li>
+   					<a href="#">GitHub</a>
+   				</li>
+   			  <li>
+   				  <a href="#">Twitter</a>
+   				</li>
+   			  <li>
+   			  	<a href="#">Facebook</a>
+   			  	</li>
+   		   	<li>
+   		   		<a href="#">WhatsApp</a>
+   		   	</li>
+   		  </ul>
+   		</div>
+   		<div class="right-col">
+   		  <ul class="social">
+   		  	  <li class="foothead">
+   		  	  	  <h3>COMPANY</h3>
+           </li>
+   		  	  <li>
+   		  	  	  <a href="#">About Us</a>
+   		  	  	</li>
+   			  <li>
+   			  	  <a href="#">Contact Us</a>
+   			  	</li>
+   			  <li>
+   			    	<a href="#">Privacy and Policy</a>
+   			  	</li>
+   			  <li>
+   			  	  <a href="#">Terms and Service</a>
+   			  	</li>
+   		  </ul>
+   		</div>
+   		<h2>
+   			<center>
+   				<span class="p">Legions'Lair.co</span>
+   				<p class="stop">Copyright© 2021-2022</p>
+   			</center>
+   		</h2>
+    	</div>
+   </footer>
+</body>
+</html>
